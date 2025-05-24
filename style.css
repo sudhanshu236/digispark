@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('fonts\Satoshi-Variable.ttf');
+}
+
 :root {
     --white: #ffffff;
     --dark-blue: #03045e;
@@ -6,7 +11,7 @@
   }
   
   body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Satoshi', sans-serif;
     margin: 0;
     background-color: var(--white);
     color: var(--dark-blue);
@@ -17,9 +22,15 @@
     max-width: 1200px;
     margin: auto;
   }
+
+  .nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   
   header {
-    background: var(--dark-blue);
+    background: var(--white);
     padding: 1rem 0;
     color: var(--white);
   }
@@ -35,10 +46,15 @@
   }
   
   nav a {
-    color: var(--white);
+    color: var(--dark-blue);
     margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
   }
   
   .hero {
@@ -47,9 +63,13 @@
     padding: 4rem 0;
     text-align: center;
   }
+
+  .hero .container {
+    text-align: end;
+  }
   
   .services {
-    padding: 4rem 0;
+    padding: 4rem 2rem;
     background: var(--white);
     text-align: center;
   }
@@ -124,6 +144,7 @@
     border-radius: 8px;
     font-size: 1.1rem;
     cursor: pointer;
+    font-family: 'Satoshi';
     transition: background-color 0.3s ease;
   }
   
