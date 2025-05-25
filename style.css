@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Satoshi';
-    src: url('fonts\Satoshi-Variable.ttf');
+    src: url('./fonts/Satoshi-Variable.ttf');
 }
 
 :root {
@@ -63,7 +63,7 @@
   
   .hero {
     /* background: linear-gradient(90deg, var(--light-blue), var(--dark-blue)); */
-    background: url('http://127.0.0.1:5500/assets/pexels-iriser-1366957.jpg');
+    background: url('./assets/pexels-iriser-1366957.jpg');
     color: var(--white);
     padding: 8rem 0;
     background-size: cover;
@@ -111,7 +111,7 @@
   border: 1px solid #ddd;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(3, 4, 94, 0.1);
-  background: url('http://127.0.0.1:5500/assets/cursor-square-svgrepo-com.png');
+  background: url('./assets/cursor-square-svgrepo-com.png');
   background-color: #ffffff;
   transition: color 0.3s ease, border-color 0.3s ease;
   z-index: 1;
