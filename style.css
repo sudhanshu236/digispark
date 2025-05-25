@@ -9,6 +9,10 @@
     --light-blue: #033e8a;
     --accent-red: #ef233c;
   }
+
+  html {
+  scroll-behavior: smooth;
+}
   
   body {
     font-family: 'Satoshi', sans-serif;
