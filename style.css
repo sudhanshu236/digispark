@@ -83,7 +83,7 @@
     margin-top: 2rem;
   }
   
-  .card {
+  /* .card {
     border: 1px solid #ddd;
     padding: 2rem;
     border-radius: 12px;
@@ -98,7 +98,68 @@
   
   .card h3 {
     color: var(--accent-red);
-  }
+  } */
+
+  .card {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(3, 4, 94, 0.1);
+  background: url('http://127.0.0.1:5500/assets/cursor-square-svgrepo-com.png');
+  background-color: #ffffff;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  z-index: 1;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: var(--accent-blue); /* Use #033e8a or any theme color */
+  z-index: -1;
+  transition: width 0.5s ease, height 0.5s ease;
+  border-radius: 0 0 100% 0;
+}
+
+.card:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+.card:hover {
+  color: #ffffff;
+  border-color: var(--accent-blue);
+  background: var(--dark-blue);
+}
+
+.card:hover h3 {
+  color: var(--accent-red);
+}
+
+.card:hover svg path {
+  stroke: #ffffff;
+}
+
+.card h3 {
+  margin-top: 1rem;
+  color: var(--accent-red); /* #ef233c */
+  transition: color 0.3s ease;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.card svg path {
+  transition: stroke 0.3s ease;
+}
+
   
   .about,
   .contact {
