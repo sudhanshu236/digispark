@@ -58,14 +58,16 @@
   }
   
   .hero {
-    background: linear-gradient(90deg, var(--light-blue), var(--dark-blue));
+    /* background: linear-gradient(90deg, var(--light-blue), var(--dark-blue)); */
+    background: url('http://127.0.0.1:5500/assets/pexels-iriser-1366957.jpg');
     color: var(--white);
-    padding: 4rem 0;
+    padding: 8rem 0;
+    background-size: cover;
     text-align: center;
   }
 
   .hero .container {
-    text-align: end;
+    text-align: left;
   }
   
   .services {
@@ -101,12 +103,14 @@
   .about,
   .contact {
     padding: 4rem 0;
-    background: #f9f9f9;
   }
+
+  .about {
+    background: #f9f9f9;
+}
   
   .contact-form {
     max-width: 600px;
-    margin: 2rem auto 0;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
