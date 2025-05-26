@@ -141,7 +141,7 @@
   left: 0;
   width: 0;
   height: 0;
-  background: var(--accent-blue); /* Use #033e8a or any theme color */
+  background: linear-gradient(90deg, var(--light-blue), var(--dark-blue));
   z-index: -1;
   transition: width 0.5s ease, height 0.5s ease;
   border-radius: 0 0 100% 0;
@@ -159,7 +159,7 @@
 }
 
 .card:hover h3 {
-  color: var(--accent-red);
+  color: var(--white);
 }
 
 .card:hover svg path {
@@ -231,12 +231,48 @@
     font-size: 1.1rem;
     cursor: pointer;
     font-family: 'Satoshi';
+    font-weight: 600;
     transition: background-color 0.3s ease;
   }
   
   .contact-form button:hover {
     background-color: var(--dark-blue);
   }
+
+  .get-in-touch {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.get-in-touch h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #03045e;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #033e8a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: #ef233c;
+  transform: translateY(-2px);
+}
+
   
   footer {
     background: var(--dark-blue);
