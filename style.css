@@ -74,6 +74,22 @@
   .hero .container {
     text-align: left;
   }
+
+  .schedule-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #ef233c; /* accent red */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.schedule-btn:hover {
+  background-color: #d81b2c;
+  transform: translateY(-2px);
+}
   
   .services {
     padding: 4rem 2rem;
