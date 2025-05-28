@@ -190,6 +190,51 @@
   .about {
     background: #f9f9f9;
 }
+
+.client-logos {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.client-logos h2 {
+  font-size: 2rem;
+  color: #03045e;
+  margin-bottom: 2rem;
+}
+
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(250px * 10); /* Adjust based on number of logos */
+  animation: scroll 25s linear infinite;
+}
+
+.logo-track img {
+  height: 60px;
+  margin: 0 30px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.logo-track img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
   
   .contact-form {
     max-width: 600px;
